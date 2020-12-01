@@ -26,10 +26,8 @@ const AddNewPost = () => {
 
     const date = new Date();
 
-    await db.collection("posts").add({
+    await db.collection("chats").add({
       title,
-      upVotesCount: 0,
-      downVotesCount: 0,
       createdAt: date.toUTCString(),
       updatedAt: date.toUTCString(),
     });
@@ -41,22 +39,19 @@ const AddNewPost = () => {
 
   return (
     <>
-      {/* <Button onClick={onOpen} colorScheme="blue">
-        Add new post
-      </Button> */}
-
       <Button onClick={onOpen} colorScheme="blue">
-        OP360 Year End End
+        Add new message
       </Button>
 
+     
       <Modal onClose={onClose} isOpen={isOpen} isCentered>
         <ModalOverlay>
           <ModalContent>
-            <ModalHeader>Add new post</ModalHeader>
+       
             <ModalCloseButton />
             <ModalBody>
               <FormControl id="post-title">
-                <FormLabel>Post title</FormLabel>
+                <FormLabel>Compose a message</FormLabel>
                 <Textarea
                   type="post-title"
                   value={title}
