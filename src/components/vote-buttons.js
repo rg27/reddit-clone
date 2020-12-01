@@ -90,7 +90,7 @@ const VoteButtons = ({ post }) => {
           {post.upVotesCount}
         </Text>
       </VStack>
-      <VStack>
+      {/* <VStack>
         <IconButton
           size="lg"
           colorScheme="yellow"
@@ -103,7 +103,7 @@ const VoteButtons = ({ post }) => {
         <Text bg="gray.100" rounded="md" w="100%" p={1}>
           {post.downVotesCount}
         </Text>
-      </VStack>
+      </VStack> */}
     </>
   );
 };

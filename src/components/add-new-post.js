@@ -41,8 +41,12 @@ const AddNewPost = () => {
 
   return (
     <>
-      <Button onClick={onOpen} colorScheme="blue">
+      {/* <Button onClick={onOpen} colorScheme="blue">
         Add new post
+      </Button> */}
+
+      <Button onClick={onOpen} colorScheme="blue">
+        OP360 Year End End
       </Button>
 
       <Modal onClose={onClose} isOpen={isOpen} isCentered>

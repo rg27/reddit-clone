@@ -1,16 +1,26 @@
-import { Box, Container, Flex } from "@chakra-ui/core";
 import React from "react";
-import AddNewPost from "./add-new-post";
+// import AddNewPost from "./add-new-post";
+import Live from "./live";
+import Header from "./header";
+import Chatbox from "./chatbox";
+import Performance from "./performance";
 
+
+import { Row, Col,Container } from "reactstrap";
 const Navbar = () => {
   return (
-    <Box position="sticky" top={0} p={4} bg="gray.100" zIndex={1}>
-      <Container maxW="md" centerContent>
-        <Flex justifyContent="flex-end" w="100%" position="sticky" top={0}>
-          <AddNewPost />
-        </Flex>
+ 
+    <div className="  d-block">
+      <Header/>
+      <Container>
+        <Row>
+          <Col sm="8" className="py-4 "><span><Live /></span></Col>
+          <Col sm="4" className="py-4 "><span> <Chatbox /></span></Col>
+        </Row>
       </Container>
-    </Box>
+      <Performance/>
+     
+    </div>
   );
 };
 

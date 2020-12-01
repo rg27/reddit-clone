@@ -1,7 +1,17 @@
-import { Container, Flex, Spinner, VStack } from "@chakra-ui/core";
+import {  Flex, Spinner, VStack } from "@chakra-ui/core";
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Col,
+  Row,
+  Container
+} from 'reactstrap';
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
 import Post from "./components/post";
+import Footer from "./components/footer";
 import db from "./lib/firebase";
 
 const App = () => {
@@ -56,13 +66,25 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Container maxW="md" centerContent p={8}>
-        <VStack spacing={8} w="100%">
-          {posts.map((post) => (
-            <Post post={post} key={post.id} />
-          ))}
-        </VStack>
-      </Container>
+          <Card>
+            <CardBody>
+             
+                <Container maxW="md" centerContent p={8}>
+                  <div className="d-flex align-items-center">
+                      <div>
+                          <CardTitle>Latest Tally</CardTitle>
+                          <CardSubtitle>Overview of the Latest Voting</CardSubtitle>
+                      </div>
+                  </div>
+                  <VStack spacing={4} w="100%">
+                    {posts.map((post) => (
+                      <Post post={post} key={post.id} />
+                    ))}
+                  </VStack>
+                </Container>
+            </CardBody>
+          </Card>
+      <Footer/>
     </>
   );
 };
