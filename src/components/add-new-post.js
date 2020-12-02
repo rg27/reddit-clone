@@ -68,7 +68,7 @@ const AddNewPost = () => {
                   disabled={!title.trim()}
                   isLoading={isSaving}
                 >
-                  Save
+                  Sent
                 </Button>
               </HStack>
             </ModalFooter>

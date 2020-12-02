@@ -1,5 +1,6 @@
 import {  Flex, Spinner, VStack } from "@chakra-ui/core";
 import AddNewPost from "./add-new-post"
+import ReactShadowScroll from 'react-shadow-scroll';
 import {
   Card,
   CardBody,
@@ -66,23 +67,32 @@ const Chatbox = () => {
 
   return (
     <>
-    
           <Card>
           <AddNewPost/>
             <CardBody>
           
-                <Container maxW="md" centerContent p={8}>
+                <Container maxW="md" centerContent p={5}>
                   <div className="d-flex align-items-center">
                       <div>
                           <CardTitle>Messages</CardTitle>
                           {/* <CardSubtitle>Overview of the Latest Voting</CardSubtitle> */}
                       </div>
                   </div>
-                  <VStack spacing={4} w="100%">
-                    {chats.map((chat) => (
-                      <Chat post={chat} key={chat.id} />
-                    ))}
-                  </VStack>
+
+                  <div className="scrollchat">
+                    <VStack spacing={2} w="100%">
+                  
+                      {chats.map((chat) => (
+                         
+                        <Chat post={chat} key={chat.id} />
+                        
+                      ))}
+                  
+                    </VStack>
+                    </div>
+               
+
+                  
                 </Container>
             </CardBody>
           </Card>

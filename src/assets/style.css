@@ -36,6 +36,14 @@ File: scss
      -o-box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.05);
  }
+.scrollchat{
+    height: 400px;
+    overflow: auto;
+}
+
+ .kahotLink{
+     color: #0041f5;
+ }
  
  /* .player-wrapper {
      position: relative;

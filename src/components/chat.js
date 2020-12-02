@@ -2,6 +2,7 @@ import { Box, HStack, Text } from "@chakra-ui/core";
 import React from "react";
 
 
+
 import {
   Card,
   CardBody,
@@ -19,6 +20,10 @@ const Chat = ({ post }) => {
         <Text>{post.title}</Text>
       </Box>
     </HStack>
+
+
+
+    
   );
 };
 

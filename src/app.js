@@ -12,6 +12,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
 import Post from "./components/post";
 import Footer from "./components/footer";
+import Kahot from "./components/kahot";
 import db from "./lib/firebase";
 
 const App = () => {
@@ -84,6 +85,7 @@ const App = () => {
                 </Container>
             </CardBody>
           </Card>
+          <Kahot/>
       <Footer/>
     </>
   );
