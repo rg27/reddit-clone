@@ -20,7 +20,7 @@ const Kahot = () => {
                 <div className="d-flex align-items-center">
                     <div>
                         <CardTitle>Let's Play Kahoot!</CardTitle>
-                        <CardText>Click this <CardLink className="kahotLink" href="https://kahoot.it/"  target="_blank">link</CardLink> or search "kahoot.it" and enter the pin below to join the game.(You can use PC or mobile phone)</CardText>
+                        <h3>Click this <CardLink className="kahotLink" href="https://kahoot.it/"  target="_blank">link</CardLink> or search "kahoot.it" and enter the pin below to join the game.(You can use PC or mobile phone)</h3>
                     </div>
                 </div>
                 <Row>

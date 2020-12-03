@@ -4,6 +4,7 @@ import Live from "./live";
 import Header from "./header";
 import Chatbox from "./chatbox";
 import Performance from "./performance";
+import ChatApp from "../chatApp";
 
 
 import { Row, Col,Container } from "reactstrap";
@@ -15,7 +16,7 @@ const Navbar = () => {
       <Container>
         <Row>
           <Col sm="8" className="py-4 "><span><Live /></span></Col>
-          <Col sm="4" className="py-4 "><span> <Chatbox /></span></Col>
+          <Col sm="4" className="py-4 "><span> <ChatApp /></span></Col>
         </Row>
       </Container>
       <Performance/>

@@ -86,7 +86,7 @@ const VoteButtons = ({ post }) => {
           isLoading={isVoting}
           isDisabled={checkIfPostIsAlreadyVoted()}
         />
-        <Text bg="gray.100" rounded="md" w="100%" p={1}>
+        <Text color="black.500" bg="gray.100" rounded="md" w="100%" p={1}>
           {post.upVotesCount}
         </Text>
       </VStack>

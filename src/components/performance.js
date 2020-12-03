@@ -36,7 +36,7 @@ const Performance = () => {
                         <CardBody>
                             <CardTitle>De-Dupe</CardTitle>
                             <CardSubtitle>Card subtitle</CardSubtitle>
-                            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                            <CardText >Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
                           
                         </CardBody>
                     </Card>
@@ -60,7 +60,7 @@ const Performance = () => {
                         <CardBody>
                             <CardTitle>Data Science</CardTitle>
                             <CardSubtitle>Card subtitle</CardSubtitle>
-                            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                            <CardText >Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
                         </CardBody>
                     </Card>
                 </Col>
@@ -79,7 +79,7 @@ const Performance = () => {
                         <CardBody>
                             <CardTitle>HS Codes</CardTitle>
                             <CardSubtitle>Card subtitle</CardSubtitle>
-                            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                            <CardText >Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
                         </CardBody>
                     </Card>
                 </Col>

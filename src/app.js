@@ -66,11 +66,13 @@ const App = () => {
 
   return (
     <>
+    <div className="app-background">
       <Navbar />
+      <Container >
           <Card>
             <CardBody>
              
-                <Container maxW="md" centerContent p={8}>
+               
                   <div className="d-flex align-items-center">
                       <div>
                           <CardTitle>Latest Tally</CardTitle>
@@ -82,11 +84,13 @@ const App = () => {
                       <Post post={post} key={post.id} />
                     ))}
                   </VStack>
-                </Container>
+             
             </CardBody>
           </Card>
+          </Container>
           <Kahot/>
       <Footer/>
+      </div>
     </>
   );
 };

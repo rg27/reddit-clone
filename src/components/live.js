@@ -17,7 +17,7 @@ const Live = () => {
                 <div className="d-flex align-items-center">
                     <div>
                         <CardTitle>Live Streaming 1</CardTitle>
-                        <CardSubtitle>Live from Cbloc,IT Park</CardSubtitle>
+                        <CardSubtitle>Live from C-Bloc, IT Park</CardSubtitle>
                     </div>
                 </div>
                 <Row>
