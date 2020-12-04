@@ -36,29 +36,6 @@ const Header = () => {
   
 
     return (
-        // <header className="topbar navbarbg" data-navbarbg="skin1">
-        //     <Navbar className="top-navbar" style={{backgroundColor: 'green'}} dark expand="md">
-        //         <div className="navbar-header" id="logobg" data-logobg="skin6">
-                  
-        //             <NavbarBrand href="/">
-                      
-        //              <b>  Sentinel Solutions</b> 
-        //             </NavbarBrand>
-                  
-        //             <button className="btn-link nav-toggler d-block d-md-none" onClick={() => showMobilemenu()}>
-        //                 <i className="ti-menu ti-close" />
-        //             </button>
-        //         </div>
-        //         <Collapse className="navbarbg" navbar data-navbarbg="skin1" >
-        //             <Nav  className="ml-auto float-right" navbar>
-        //                 <NavItem>
-        //                     <a href="/" className="btn btn-danger mr-2" style={{ marginTop: '5px'    }}>OP360 Year End Event</a>
-        //                 </NavItem>
-                      
-        //             </Nav>
-        //         </Collapse>
-        //     </Navbar>
-        // </header>
         <div>
            
         <Navbar color="light" light expand="md">

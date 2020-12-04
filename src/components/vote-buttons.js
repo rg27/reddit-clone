@@ -90,20 +90,6 @@ const VoteButtons = ({ post }) => {
           {post.upVotesCount}
         </Text>
       </VStack>
-      {/* <VStack>
-        <IconButton
-          size="lg"
-          colorScheme="yellow"
-          aria-label="Downvote"
-          icon={<FiArrowDown />}
-          onClick={() => handleClick("downvote")}
-          isLoading={isVoting}
-          isDisabled={checkIfPostIsAlreadyVoted()}
-        />
-        <Text bg="gray.100" rounded="md" w="100%" p={1}>
-          {post.downVotesCount}
-        </Text>
-      </VStack> */}
     </>
   );
 };
