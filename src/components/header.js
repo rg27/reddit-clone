@@ -39,7 +39,7 @@ const Header = () => {
         <div>
            
         <Navbar color="light" light expand="md">
-            <NavbarBrand href="/"><img src={logodarkicon} /></NavbarBrand>
+            <NavbarBrand href="/"><img className="imgLogo" src={logodarkicon} /></NavbarBrand>
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
               <Nav className="mr-auto" navbar>

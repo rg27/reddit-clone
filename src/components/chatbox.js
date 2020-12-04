@@ -83,16 +83,11 @@ const Chatbox = () => {
                     <VStack spacing={2} w="100%">
                   
                       {chats.map((chat) => (
-                         
                         <Chat post={chat} key={chat.id} />
-                        
                       ))}
-                  
                     </VStack>
                     </div>
                
-
-                  
                 </Container>
             </CardBody>
           </Card>
