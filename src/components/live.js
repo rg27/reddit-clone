@@ -29,7 +29,7 @@ const Live = () => {
                             url='https://www.youtube.com/watch?v=NMre6IAAAiU'
                             width='100%'
                             height='350px'
-                            // playing="false"
+                            playing="true"
                             controls="true"
                             />
                         </div>
@@ -54,7 +54,7 @@ const Live = () => {
                             url='https://www.youtube.com/watch?v=NMre6IAAAiU'
                             width='100%'
                             height='350px'
-                            // playing="false"
+                            playing="true"
                             controls="true"
                             />
                         </div>
