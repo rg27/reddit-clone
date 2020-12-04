@@ -194,10 +194,16 @@ File: scss
   }
   
   img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 50px;
+    height: 80px;
+    border-radius: 0%;
     margin: 2px 5px;
+  }
+              
+              
+  .op360
+  {
+    font-size: 160%;
   }
 
   .app-background
