@@ -30,6 +30,78 @@ File: scss
  @import url(all/icons/themify-icons/themify-icons.css);
  @import url(all/icons/material-design-iconic-font/css/materialdesignicons.min.css);
   */
+  
+/* Contact.js */
+.form {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    text-align: left;
+  }
+  
+  .form > h1 {
+    margin-bottom: 30px;
+  }
+  
+  .form > input,
+  textarea {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 20px;
+    border: 5px solid black;
+    background: #fff;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .form > input:focus,
+  textarea:focus {
+    border: 1px solid rgb(0, 0, 196);
+  }
+  
+  .form > textarea {
+    /* height: 150px; */
+    max-width: 400px;
+    min-height: 100px;
+  }
+  
+  .form > label {
+    padding-bottom: 10px;
+    /* color: rgb(0, 0, 32); */
+    font-weight: bold;
+  }
+  
+  .form > .feedbutton {
+    padding: 10px;
+    border: none;
+    background-color: rgb(2, 2, 110);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 10px;
+  }
+  .inputClass
+{
+    text-align: left;
+  
+}
+  
+  .form > button:hover {
+    background-color: rgb(0, 0, 196);
+  }
+
+.feedbutton
+{
+    background-color: white;
+}
+  
 
   body {
     margin: 0;
@@ -44,6 +116,8 @@ File: scss
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+
+  
 
   body {
     background-color: #282c34;

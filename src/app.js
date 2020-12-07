@@ -1,5 +1,5 @@
 import {  Flex, Spinner, VStack } from "@chakra-ui/core";
-import ParticlesBg from "particles-bg";
+// import ParticlesBg from "particles-bg";
 import {
   Card,
   CardBody,
@@ -13,6 +13,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
 import Post from "./components/post";
 import Footer from "./components/footer";
+import Contact from "./contact";
 import Kahot from "./components/kahot";
 import db from "./lib/firebase";
 import firebase from 'firebase/app';
@@ -96,7 +97,9 @@ const App = () => {
           </Card>
           </Container>
           <Kahot/>
-      <Footer/><ParticlesBg color="#ff0000" num={200} type="circle" bg={true} />
+          <Contact/>
+      <Footer/>
+      {/* <ParticlesBg color="#ff0000" num={200} type="circle" bg={true} /> */}
     
       </div>
     </>
