@@ -17,9 +17,15 @@ import {
 
 const Performance = () => {
     return (
-        <div>
-        <Container>
-
+<Container>
+    <Card>
+        <CardBody>
+            <div className="d-flex align-items-center">
+                <div>
+                    <CardTitle>OP360 LOBs</CardTitle>
+                    <CardSubtitle>Phasellus lobortis vestibulum sapien, ut blandit neque bibendum eu. Nunc tincidunt pharetra felis. </CardSubtitle>
+                </div>
+            </div>
             <Row>
                 <Col sm="4" md="4">
                     <Card>
@@ -37,7 +43,7 @@ const Performance = () => {
                             <CardTitle>De-Dupe</CardTitle>
                             <CardSubtitle>Card subtitle</CardSubtitle>
                             <CardText >Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                          
+                        
                         </CardBody>
                     </Card>
                 </Col>
@@ -84,8 +90,11 @@ const Performance = () => {
                     </Card>
                 </Col>
             </Row>
-            </Container>
-        </div>
+        </CardBody>
+    </Card>
+</Container>
+      
+     
     );
 }
 

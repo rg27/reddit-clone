@@ -11,6 +11,7 @@
     "@fortawesome/react-fontawesome": "^0.1.13",
     "firebase": "^7.22.0",
     "framer-motion": "^2.9.4",
+    "particles-bg": "^2.5.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-firebase-hooks": "^2.2.0",

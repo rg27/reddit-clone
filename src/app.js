@@ -1,4 +1,5 @@
 import {  Flex, Spinner, VStack } from "@chakra-ui/core";
+import ParticlesBg from "particles-bg";
 import {
   Card,
   CardBody,
@@ -78,8 +79,7 @@ const App = () => {
       <Container >
           <Card>
             <CardBody>
-             
-               
+            
                   <div className="d-flex align-items-center">
                       <div>
                           <CardTitle>Latest Tally</CardTitle>
@@ -96,7 +96,8 @@ const App = () => {
           </Card>
           </Container>
           <Kahot/>
-      <Footer/>
+      <Footer/><ParticlesBg color="#ff0000" num={200} type="circle" bg={true} />
+    
       </div>
     </>
   );

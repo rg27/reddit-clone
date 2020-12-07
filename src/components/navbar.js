@@ -15,8 +15,8 @@ const Navbar = () => {
       <Header/>
       <Container>
         <Row>
-          <Col sm="8" className="py-4 "><span><Live /></span></Col>
-          <Col sm="4" className="py-4 "><span> <ChatApp /></span></Col>
+          <Col sm="7" className="py-4 "><span><Live /></span></Col>
+          <Col sm="5" className="py-4 "><span> <ChatApp /></span></Col>
         </Row>
       </Container>
       <Performance/>

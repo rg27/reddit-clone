@@ -215,7 +215,7 @@ File: scss
 
   .app-background
   {
-      background-color: rgb(206, 203, 203);
+      background-color: rgb(10, 10, 10);
   }
 
   .ctext
@@ -786,7 +786,7 @@ File: scss
  .blockquote-footer {
      display: block;
      font-size: 80%;
-     color: #8898aa;
+     color: #fdfdfd;
  }
  
  .blockquote-footer::before {
@@ -13068,6 +13068,8 @@ File: scss
  *******************/
  .footer {
      padding: 15px 20px;
+     color: ivory;
+     font-size: 120%;
  }
  
  /*******************

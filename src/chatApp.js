@@ -4,6 +4,15 @@ import 'firebase/firestore';
 import 'firebase/auth';
 import 'firebase/analytics';
 
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Col,
+  Row
+} from 'reactstrap';
+
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
@@ -30,17 +39,23 @@ function ChatApp() {
   const [user] = useAuthState(auth);
 
   return (
-    <div className="App">
-      <header>
-        <h1>OP360 Chats</h1>
-        <SignOut />
-      </header>
+    <Card>
+      <CardBody>
+      <div className="App">
+          <header>
+            <h1>OP360 Chats</h1>
+          <SignOut />
+        </header>
 
-      <section>
-        {user ? <ChatRoom /> : <SignIn />}
-      </section>
+        <section>
+          {user ? <ChatRoom /> : <SignIn />}
+        </section>
 
-    </div>
+      </div>
+      </CardBody>
+     
+    </Card>
+    
   );
 } 
 

@@ -1,8 +1,6 @@
 import { Box, HStack, Text } from "@chakra-ui/core";
 import React from "react";
 
-
-
 import {
   Card,
   CardBody,
