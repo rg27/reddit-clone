@@ -34,12 +34,14 @@ File: scss
 /* Contact.js */
 .form {
     height: 60vh;
+    width: 250%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
     color: black;
     text-align: left;
+    
   }
   
   .form > h1 {
@@ -54,13 +56,16 @@ File: scss
     margin-bottom: 20px;
     border: 5px solid black;
     background: #fff;
-    font-size: 16px;
+    font-size: 26px;
     outline: none;
+    caret-color: auto;
   }
   
   .form > input:focus,
   textarea:focus {
-    border: 1px solid rgb(0, 0, 196);
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
   }
   
   .form > textarea {
@@ -87,10 +92,18 @@ File: scss
     transition: 0.2s ease-in-out;
     margin-top: 10px;
   }
+
+  .inputClass:focus {
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+  }
   .inputClass
 {
     text-align: left;
-  
+    width: 100%;
+    color: #000;
+    caret-color:auto;
 }
   
   .form > button:hover {

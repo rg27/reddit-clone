@@ -1,5 +1,5 @@
 import {  Flex, Spinner, VStack } from "@chakra-ui/core";
-// import ParticlesBg from "particles-bg";
+import ParticlesBg from "particles-bg";
 import {
   Card,
   CardBody,
@@ -13,7 +13,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./components/navbar";
 import Post from "./components/post";
 import Footer from "./components/footer";
-import Contact from "./contact";
+import Feedback from "./feedback";
 import Kahot from "./components/kahot";
 import db from "./lib/firebase";
 import firebase from 'firebase/app';
@@ -76,11 +76,11 @@ const App = () => {
   return (
     <>
     <div className="app-background">
+    <ParticlesBg color="#ff0000" num={200} type="circle" bg={true} />
       <Navbar />
       <Container >
           <Card>
             <CardBody>
-            
                   <div className="d-flex align-items-center">
                       <div>
                           <CardTitle>Latest Tally</CardTitle>
@@ -92,15 +92,19 @@ const App = () => {
                       <Post post={post} key={post.id} />
                     ))}
                   </VStack>
-             
             </CardBody>
           </Card>
           </Container>
           <Kahot/>
-          <Contact/>
+          <Container>
+            <Row>
+                <Col sm="7" className="py-2 "><span> <Feedback/></span></Col>
+                <Col sm="3" className="py-2 "><span> </span></Col>
+                <Col sm="2" className="py-2 "><span> </span></Col>
+            </Row>
+          </Container>
       <Footer/>
-      {/* <ParticlesBg color="#ff0000" num={200} type="circle" bg={true} /> */}
-    
+      
       </div>
     </>
   );

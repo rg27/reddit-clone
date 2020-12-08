@@ -48,13 +48,13 @@ const Contact = () => {
   };
 
   return (
-    <Container >
+  
     <Card>
       <CardBody>
-
+<div className="d-flex align-items-center">
 <Form className="form" onSubmit={handleSubmit}>
     <h1>Feedback Form</h1>
-    <FormGroup>
+    <FormGroup >
         <Label >Name</Label>
         <Input 
           type="name" 
@@ -90,13 +90,11 @@ const Contact = () => {
     </FormGroup>
       <Button className="feedbutton">Submit</Button>
     </Form>
+</div>
 
-   
     </CardBody>
     </Card>
-    </Container>
-   
-    
+ 
   );
 };
 
