@@ -1,5 +1,5 @@
-import { Container } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import Timer from "./timer";
 import {
     Collapse,
     Navbar,
@@ -12,7 +12,10 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    NavbarText
+    NavbarText,
+    Col,
+    Row,
+    Container
 } from 'reactstrap';
 
 
@@ -47,6 +50,16 @@ const Header = () => {
                   <NavLink className="op360" href="/">Office Partners 360</NavLink>
                 </NavItem>
               </Nav>
+
+              <Nav className="mr-auto" navbar>
+                <NavItem>
+                <NavLink className="op360" ><Timer/></NavLink>
+                </NavItem>
+              </Nav>
+
+              {/* <NavItem>
+                  <NavLink className="op360" ><Timer/></NavLink>
+                </NavItem> */}
               <NavbarText className="op360">OP360 Year End Event</NavbarText>
             </Collapse>
         </Navbar>
