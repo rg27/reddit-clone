@@ -19,9 +19,9 @@ const Timer = () => {
      
     return (
       <Countdown
-      date={Date.now() + 500000}
+      date={Date.now() + 5000}
       renderer={renderer}
-    />
+      />
       )
     }
   

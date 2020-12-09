@@ -59,11 +59,15 @@ function ChatApp() {
 
 function SignIn() {
 
+
   const signInWithGoogle = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
+
+    provider.setCustomParameters({
+        hd: "officepartners360.com",
+    });
     auth.signInWithPopup(provider);
   }
-
   return (
     <>
       <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
@@ -94,14 +98,14 @@ function ChatRoom() {
   const sendMessage = async (e) => {
     e.preventDefault();
 
-    const { uid, photoURL, displayName } = auth.currentUser;
+    const { uid, photoURL, name } = auth.currentUser;
 
     await messagesRef.add({
       text: formValue,
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       uid,
       photoURL,
-      displayName
+      name
     })
 
     setFormValue('');
@@ -129,13 +133,13 @@ function ChatRoom() {
 
 
 function ChatMessage(props) {
-  const { text, uid, photoURL,displayName } = props.message;
+  const { text, uid, photoURL,name } = props.message;
 
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
 
   return (<>
     <div className={`message ${messageClass}`}>
-      {/* <p>{displayName}</p> */}
+      {/* <p>{name}</p> */}
       <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
       <p>{text}</p>
     </div>
