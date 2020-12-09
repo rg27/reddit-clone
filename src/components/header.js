@@ -56,10 +56,6 @@ const Header = () => {
                 <NavLink className="op360" ><Timer/></NavLink>
                 </NavItem>
               </Nav>
-
-              {/* <NavItem>
-                  <NavLink className="op360" ><Timer/></NavLink>
-                </NavItem> */}
               <NavbarText className="op360">OP360 Year End Event</NavbarText>
             </Collapse>
         </Navbar>
