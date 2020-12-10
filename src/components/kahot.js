@@ -29,7 +29,7 @@ const Kahot = () => {
                         <div className='player-wrapper'>
                             <ReactPlayer
                             // className='react-player'
-                            url='hthttps://www.youtube.com/watch?v=9J5teKt1ZiA'
+                            url='https://www.youtube.com/watch?v=bmVKaAV_7-A'
                             width='100%'
                             height='500px'
                             // playing="true"
