@@ -139,15 +139,15 @@ File: scss
     background-color: #282c34;
   }
   
-  .App {
+  /* .App {
     text-align: center;
     max-width: 728px;
     margin: 0 auto;
-  }
+  } */
   
   .App header {
     background-color: #181717;
-    height: 10vh;
+    height: 5vh;
     min-height: 50px;
     color: white;
     /* position: fixed; */
@@ -166,14 +166,14 @@ File: scss
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 50vh;
+    min-height: 55vh;
     background-color: rgb(40, 37, 53);
   }
   
   main {
-    padding: 5px;
-    height: 50vh;
-    margin: 0vh 0 10vh;
+    padding: 2px;
+    height: 43vh;
+    margin: 0vh 0 2vh;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;

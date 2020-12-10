@@ -14,7 +14,7 @@ import Navbar from "./components/navbar";
 import Post from "./components/post";
 import Footer from "./components/footer";
 import Feedback from "./feedback";
-import Kahot from "./components/kahot";
+import Attendance from "./attendance";
 import db from "./lib/firebase";
 import firebase from 'firebase/app';
 import 'firebase/auth';        // for authentication
@@ -96,12 +96,10 @@ const App = () => {
             </CardBody>
           </Card>
           </Container>
-          <Kahot/>
           <Container>
             <Row>
-                <Col sm="7" className="py-2 "><span> <Feedback/></span></Col>
-                <Col sm="3" className="py-2 "><span> </span></Col>
-                <Col sm="2" className="py-2 "><span> </span></Col>
+                <Col sm="6" className="py-2 "><span> <Attendance/></span></Col>
+                <Col sm="6" className="py-2 "><span> <Feedback/></span></Col>
             </Row>
           </Container>
           <Footer/>
