@@ -7,10 +7,6 @@ import 'firebase/analytics';
 import {
   Card,
   CardBody,
-  CardTitle,
-  CardSubtitle,
-  Col,
-  Row
 } from 'reactstrap';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -50,24 +46,20 @@ function ChatApp() {
           {user ? <ChatRoom /> : <SignIn />}
         </section>
       </div>
-      </CardBody>
-     
+      </CardBody>  
     </Card>
-    
   );
 } 
 
 function SignIn() {
-
-
   const signInWithGoogle = () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-
+  const provider = new firebase.auth.GoogleAuthProvider();
     provider.setCustomParameters({
-        hd: "officepartners360.com",
+      hd: "officepartners360.com",
     });
-    auth.signInWithPopup(provider);
+  auth.signInWithPopup(provider);
   }
+
   return (
     <>
       <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
@@ -75,7 +67,6 @@ function SignIn() {
       <p className="ctext">Do not violate the community guidelines!</p>
     </>
   )
-
 }
 
 function SignOut() {
@@ -89,62 +80,49 @@ function ChatRoom() {
   const dummy = useRef();
   const messagesRef = firestore.collection('messages');
   const query = messagesRef.orderBy('createdAt').limit(25);
-
   const [messages] = useCollectionData(query, { idField: 'id' });
-
   const [formValue, setFormValue] = useState('');
-
-
   const sendMessage = async (e) => {
-    e.preventDefault();
-
-    const { uid, photoURL, name } = auth.currentUser;
+  e.preventDefault();
+    const { uid, photoURL, displayName } = auth.currentUser;
 
     await messagesRef.add({
       text: formValue,
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       uid,
       photoURL,
-      name
+      displayName
     })
-
     setFormValue('');
     dummy.current.scrollIntoView({ behavior: 'smooth' });
   }
 
-  return (<>
+  return (
+  <>
     <main>
-
       {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
-
       <span ref={dummy}></span>
-
     </main>
-
     <form onSubmit={sendMessage}>
-
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
-
       <button type="submit" disabled={!formValue}>🕊️</button>
-
     </form>
-  </>)
+  </>
+  )
 }
-
 
 function ChatMessage(props) {
-  const { text, uid, photoURL,name } = props.message;
+const { text, uid, photoURL, displayName } = props.message;
+const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
 
-  const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
-
-  return (<>
-    <div className={`message ${messageClass}`}>
-      {/* <p>{name}</p> */}
-      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
-      <p>{text}</p>
-    </div>
-  </>)
+return (
+<>
+  <div className={`message ${messageClass}`}>
+    <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} />
+    <h6 className="p1">{displayName}</h6><p>{text}</p>
+  </div>
+</>
+)
 }
-
 
 export default ChatApp;

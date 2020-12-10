@@ -1,22 +1,16 @@
+import React, { useEffect, useState } from "react";
+import Chat from "./chat";
+import db from "../lib/firebase";
 import {  Flex, Spinner, VStack } from "@chakra-ui/core";
 import AddNewPost from "./add-new-post"
-import ReactShadowScroll from 'react-shadow-scroll';
 import {
   Card,
   CardBody,
   CardTitle,
-  CardSubtitle,
-  Col,
-  Row,
   Container
 } from 'reactstrap';
-import React, { useEffect, useState } from "react";
 
-import Chat from "./chat";
-
-import db from "../lib/firebase";
-
-const Chatbox = () => {
+  const Chatbox = () => {
   const [chats, setChats] = useState([]);
   const [isLoading, setLoading] = useState(true);
 
@@ -45,7 +39,6 @@ const Chatbox = () => {
       .orderBy("createdAt", "desc")
       .onSnapshot((querySnapshot) => {
         const _posts = [];
-
         querySnapshot.forEach((doc) => {
           _posts.push({
             id: doc.id,
@@ -67,31 +60,26 @@ const Chatbox = () => {
 
   return (
     <>
-          <Card>
-          <AddNewPost/>
-            <CardBody>
-          
-                <Container maxW="md" centerContent p={5}>
-                  <div className="d-flex align-items-center">
-                      <div>
-                          <CardTitle>Messages</CardTitle>
-                          {/* <CardSubtitle>Overview of the Latest Voting</CardSubtitle> */}
-                      </div>
+      <Card>
+        <AddNewPost/>
+        <CardBody>
+      
+            <Container maxW="md" centerContent p={5}>
+              <div className="d-flex align-items-center">
+                  <div>
+                      <CardTitle>Messages</CardTitle>
                   </div>
-
-                  <div className="scrollchat">
-                    <VStack spacing={2} w="100%">
-                  
-                      {chats.map((chat) => (
-                        <Chat post={chat} key={chat.id} />
-                      ))}
-                    </VStack>
-                    </div>
-               
-                </Container>
-            </CardBody>
-          </Card>
-     
+              </div>
+              <div className="scrollchat">
+                <VStack spacing={2} w="100%">
+                  {chats.map((chat) => (
+                    <Chat post={chat} key={chat.id} />
+                  ))}
+                </VStack>
+                </div>
+            </Container>
+        </CardBody>
+      </Card>
     </>
   );
 };

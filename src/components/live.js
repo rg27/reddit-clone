@@ -11,7 +11,6 @@ import {
 
 const Live = () => {
     return (
-        
         <Card>
             <CardBody>
                 <div className="d-flex align-items-center">
@@ -37,7 +36,6 @@ const Live = () => {
                     </Col>
                 </Row>
             </CardBody>
-
             <CardBody>
                 <div className="d-flex align-items-center">
                     <div>
@@ -45,8 +43,8 @@ const Live = () => {
                         <CardSubtitle>Live from Radisson Event Centre</CardSubtitle>
                     </div>
                 </div>
-                <Row>
-                    <Col lg="12">
+            <Row>
+                <Col lg="12">
                     <div className="campaign ct-charts">
                         <div className='player-wrapper'>
                             <ReactPlayer
@@ -58,12 +56,12 @@ const Live = () => {
                             controls="true"
                             />
                         </div>
-                        </div>
-                    </Col>
-                </Row>
-            </CardBody>
-        </Card>
-    );
+                    </div>
+                </Col>
+            </Row>
+        </CardBody>
+    </Card>
+);
 }
 
 export default Live;

@@ -87,6 +87,7 @@ const App = () => {
                           <CardSubtitle>Overview of the Latest Voting</CardSubtitle>
                       </div>
                   </div>
+
                   <VStack spacing={4} w="100%">
                     {posts.map((post) => (
                       <Post post={post} key={post.id} />
@@ -103,9 +104,8 @@ const App = () => {
                 <Col sm="2" className="py-2 "><span> </span></Col>
             </Row>
           </Container>
-      <Footer/>
-      
-      </div>
+          <Footer/>
+    </div>
     </>
   );
 };

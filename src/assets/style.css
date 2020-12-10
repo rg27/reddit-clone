@@ -263,6 +263,19 @@ File: scss
     /* color: white; */
     text-align: center;
   }
+
+  .p1 {
+    max-width: 70px;
+    margin-bottom: 12px;
+    line-height: 13px;
+    /* padding: 1px 1px; */
+    position: relative;
+    border-radius:1%;
+    margin: 5px 5px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+  }
   
   .message {
     display: flex;
@@ -276,7 +289,7 @@ File: scss
   .sent p {
     color: white;
     background: #0b93f6;
-    align-self: flex-end;
+    /* align-self: flex-end; */
   }
   .received p {
     background: #e5e5ea;
@@ -296,16 +309,21 @@ File: scss
     border-radius: 0%;
     margin: 2px 5px;
   }
-              
+      
+  .b1{
+      line-height: 50%;
+  }
               
   .op360
   {
+    color: #000;
     font-size: 160%;
+    
   }
 
   .app-background
   {
-      background-color: rgb(10, 10, 10);
+      background-color:black;
   }
 
   .ctext
