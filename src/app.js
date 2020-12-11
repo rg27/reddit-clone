@@ -16,6 +16,7 @@ import VoteTally from "./vote-tally";
 import Footer from "./components/footer";
 import Feedback from "./feedback";
 import Attendance from "./attendance";
+import Dashboard from "./dashboard";
 
 const App = () => {
 
@@ -28,6 +29,9 @@ const App = () => {
               <Col sm="8" className="py-2 "><span><Performance/></span></Col>
               <Col sm="4" className="py-2 "><span><VoteTally /></span></Col>
           </Row>
+        </Container>
+        <Container>
+            <Dashboard/>
         </Container>
         <Container>
           <Row>
