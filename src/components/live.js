@@ -25,11 +25,12 @@ const Live = () => {
                         <div className='player-wrapper'>
                             <ReactPlayer
                             className='react-player'
-                            url='https://www.youtube.com/watch?v=NMre6IAAAiU'
+                            url='https://www.facebook.com/laravelcebu/videos/863985181028919'
                             width='100%'
                             height='350px'
                             playing="true"
                             controls="true"
+                            appId="713990019210041"
                             />
                         </div>
                         </div>
