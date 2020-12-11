@@ -2,7 +2,7 @@ import React from "react";
 import Live from "./live";
 import Header from "./header";
 import Chatbox from "./chatbox";
-import Performance from "./performance";
+
 import ChatApp from "../chatApp";
 
 import { Row, Col,Container } from "reactstrap";
@@ -16,7 +16,7 @@ const Navbar = () => {
             <Col sm="6" className="py-4 "><span> <ChatApp /></span></Col>
           </Row>
       </Container>
-      <Performance/>
+     
     </div>
   );
 };

@@ -9,6 +9,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
+    "bootstrap": "^4.5.3",
     "firebase": "^7.22.0",
     "framer-motion": "^2.9.4",
     "moment": "^2.29.1",

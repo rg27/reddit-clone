@@ -10,7 +10,7 @@ import {
   Input
 } from 'reactstrap';
 
-const Contact = () => {
+const Feedback = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -48,8 +48,8 @@ return (
       <Form className="form" onSubmit={handleSubmit}>
           <h1>Feedback Form</h1>
           <FormGroup >
-              <Label >Name</Label>
               <Input 
+                required
                 type="name" 
                 name="name" 
                 className="inputClass"
@@ -59,20 +59,21 @@ return (
               />
           </FormGroup>
           <FormGroup>
-            <Label for="exampleEmail">Email</Label>
             <Input 
+              required
               className="inputClass"
               type="email" 
               name="email" 
-              placeholder="Email"
+              placeholder="Company Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </FormGroup>
 
           <FormGroup>
-            <Label >Message</Label>
             <Input 
+              required
+              className="textarea"
               type="textarea" 
               name="text"  
               placeholder="Message"
@@ -88,4 +89,4 @@ return (
   );
 };
 
-export default Contact;
+export default Feedback;

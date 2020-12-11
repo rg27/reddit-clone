@@ -63,7 +63,6 @@ import {
       <Card>
         <AddNewPost/>
         <CardBody>
-      
             <Container maxW="md" centerContent p={5}>
               <div className="d-flex align-items-center">
                   <div>

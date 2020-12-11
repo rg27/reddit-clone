@@ -15,8 +15,8 @@ const Live = () => {
             <CardBody>
                 <div className="d-flex align-items-center">
                     <div>
-                        <CardTitle>Live Streaming 1</CardTitle>
-                        <CardSubtitle>Live from C-Bloc, IT Park</CardSubtitle>
+                        <CardTitle>Live Streaming</CardTitle>
+                        <CardSubtitle>Seda Hotel, Cebu City, Cebu, Philippines</CardSubtitle>
                     </div>
                 </div>
                 <Row>
