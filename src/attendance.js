@@ -15,12 +15,12 @@ const Attendance = () => {
     name:"",
     email:"",
     account:"",
-    lob:"",
+    phone:"",
     province:"",
     town:""
   });
 
-  const {name,email,lob,account,province,town} = data;
+  const {name,email,phone,account,province,town} = data;
 
   const handleChange = e => {
     setData({ ...data, [e.target.name]: e.target.value})
@@ -38,12 +38,12 @@ const handleSubmit = async (e) => {
           'Content-Type':'application/json'
         },
         body: JSON.stringify([
-          [name,email,account,lob,province,town, new Date().toLocaleString()],
+          [name,email,account,phone,province,town, new Date().toLocaleString()],
         ]),
     }
   );
     await response.json();
-    setData({ ...data, name: "", email: "",lob: "",account: "",province: "", town: ""});
+    setData({ ...data, name: "", email: "",phone: "",account: "",province: "", town: ""});
   }catch(err){
     console.log(err)
   }
@@ -54,7 +54,7 @@ return (
     <CardBody>
     <div className="d-flex align-items-center">
       <Form className="attendanceform" onSubmit={handleSubmit}>
-          <h1>Attendance Form</h1>
+          <h1>Raffle Registration Form</h1>
           <FormGroup >
             <Input 
               required
@@ -80,23 +80,52 @@ return (
           </FormGroup>
 
           <FormGroup>
+            <Input 
+                required
+                className="attinputClass"
+                type="text" 
+                name="phone" 
+                placeholder="Phone Number"
+                value={phone}
+                onChange={handleChange} 
+              />
+          </FormGroup>
+
+          <FormGroup>
             <Input type='select' required  value={account}   onChange={handleChange}   name="account" id="exampleAccount">
               <option  value=" ">--Choose Account--</option>
-              <option value="Wayfair">Wayfair</option>
-              <option value="Examity">Examity</option>
+              <option value="ADMIN">ADMIN</option>
+              <option value="B2B">B2B</option>
+              <option value="BB">BB</option>
+              <option value="BIZ DEV">BIZ DEV</option>
+              <option value="CLX">CLX</option>
+              <option value="COMPLIANCE & REGULATORY">COMPLIANCE & REGULATORY</option>
+              <option value="CSE">CSE</option>
+              <option value="DATA CORE">DATA CORE</option>
+              <option value="DENVER">DENVER</option>
+              <option value="DFX">DFX</option>
+              <option value="FACILITIES">FACILITIES</option>
+              <option value="FINANCE">FINANCE</option>
+              <option value="HR Dept">HR Dept</option>
+              <option value="IT Dept">IT Dept</option>
+              <option value="PBC">PBC</option>
+              <option value="PLANO">PLANO</option>
+              <option value="RB">RB</option>
+              <option value="RECRUITMENT">RECRUITMENT</option>
+              <option value="Security">Security</option>
+              <option value="SFY">SFY</option>
+              <option value="SG">SG</option>
+              <option value="TRNG">TRNG</option>
+              <option value="UTILITY">UTILITY</option>
+              <option value="VOC">VOC</option>
+              <option value="WFXMD">WFXMD</option>
+              <option value="WFXMN">WFXMN</option>
+              <option value="XMT">XMT</option>
+              <option value="Others">Others</option>
             </Input>
           </FormGroup>
 
           <FormGroup>
-            <Input type='select' required  value={lob}   onChange={handleChange}  className="attinputClass" name="lob" id="exampleAccount">
-              <option className="optionChoose" value=" ">--Choose LOB--</option>
-              <option value="HS-Codes">HS-Codes</option>
-              <option value="De-Dupe">De-Dupe</option>
-            </Input>
-          </FormGroup>
-
-          <FormGroup>
-       
             <Input 
               required
               className="attinputClass"
