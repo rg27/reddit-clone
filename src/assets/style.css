@@ -361,6 +361,11 @@ File: scss
   .sent {
     flex-direction: row-reverse;
   }
+
+  .unclickable{
+    display: inline-block;
+    pointer-events: none;
+  }
   
   .sent p {
     color: white;

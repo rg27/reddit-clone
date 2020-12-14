@@ -10,6 +10,7 @@ const Timer = () => {
         frameborder="0" 
         width="320" 
         height="100"
+        className="unclickable"
       />
     </div>
     )
