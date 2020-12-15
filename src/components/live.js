@@ -25,9 +25,9 @@ const Live = () => {
                         <div className='player-wrapper'>
                             <ReactPlayer
                             className='react-player'
-                            url='https://www.facebook.com/laravelcebu/videos/863985181028919'
+                            url='https://www.facebook.com/374789376055328/videos/1984545255021489/'
                             width='100%'
-                            height='350px'
+                            height='100%'
                             playing="true"
                             controls="true"
                             appId="713990019210041"
