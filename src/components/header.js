@@ -22,6 +22,7 @@ import {
         <Navbar color="" dark expand="md">
         <NavbarBrand  href="/"> 
           <img 
+            className="logoImg"
             src={Logo}
           />
           </NavbarBrand>
