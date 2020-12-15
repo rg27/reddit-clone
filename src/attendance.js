@@ -28,6 +28,7 @@ const Attendance = () => {
  
 const handleSubmit = async (e) => {
   e.preventDefault();
+  alert("Successfully submitted👍");
   
   try{
     const response = await fetch(
@@ -121,6 +122,16 @@ return (
               <option value="WFXMD">WFXMD</option>
               <option value="WFXMN">WFXMN</option>
               <option value="XMT">XMT</option>
+              <option value="SS360">SS360</option>
+              <option value="UMA">UMA</option>
+              <option value="IND">IND</option>
+              <option value="SHOP">SHOP</option>
+              <option value="PIPE">PIPE</option>
+              <option value="TLC">TLC</option>
+              <option value="FAN">FAN</option>
+              <option value="BXO">BXO</option>
+              <option value="STAR">STAR</option>
+              <option value="WIL">WIL</option>
               <option value="Others">Others</option>
             </Input>
           </FormGroup>
