@@ -376,9 +376,9 @@ File: scss
   }
 
   .logoImg{
-    width: 90px;
-    height:90px;
-    border-radius: 25%;
+    width: 80px;
+    height:80px;
+    border-radius: 5%;
     margin: 2px 5px;
   }
   
