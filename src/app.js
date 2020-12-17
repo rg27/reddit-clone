@@ -28,7 +28,7 @@ const App = () => {
 <Particles
  style={{ position: "absolute" }}
  height="95%"
- width="95%"
+ width="100%"
     params={{
 	    "particles": {
 	        "number": {
