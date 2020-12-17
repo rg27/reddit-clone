@@ -82,7 +82,7 @@ const VoteTally = () => {
                       </div>
                   </div>
 
-                  <VStack spacing={4} w="100%">
+                  <VStack spacing={2} w="100%">
                     {posts.map((post) => (
                       <Post post={post} key={post.id} />
                     ))}

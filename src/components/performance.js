@@ -23,7 +23,7 @@ const Performance = () => {
                         </div>
                     </div>
                     <Row>
-                        <Col sm="3" md="3">
+                        <Col sm="4" md="4">
                             <Card>
                                 <div className="campaign ct-charts">
                                     <div className=''>
@@ -40,7 +40,7 @@ const Performance = () => {
                                 </CardBody>
                             </Card>
                         </Col>
-                        <Col sm="3" md="3">
+                        <Col sm="4" md="4">
                             <Card>
                                 <div className="campaign ct-charts">
                                     <div className=''>
@@ -58,95 +58,7 @@ const Performance = () => {
                                 </CardBody>
                             </Card>
                         </Col>
-                        <Col sm="3" md="3">
-                            <Card>
-                                <div className="campaign ct-charts">
-                                    <div className=''>
-                                        <ReactPlayer
-                                        url='https://www.youtube.com/watch?v=21X5lGlDOfg'
-                                        width='100%'
-                                        height='200px'
-                                        controls="true"
-                                        />
-                                    </div>
-                                </div>
-                                <CardBody>
-                                    <CardTitle>HS Codes</CardTitle>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col sm="3" md="3">
-                            <Card>
-                                <div className="campaign ct-charts">
-                                    <div className=''>
-                                        <ReactPlayer
-                                        url='https://www.youtube.com/watch?v=21X5lGlDOfg'
-                                        width='100%'
-                                        height='200px'
-                                        controls="true"
-                                        />
-                                    </div>
-                                </div>
-                                <CardBody>
-                                    <CardTitle>HS Codes</CardTitle>
-                                </CardBody>
-                            </Card>
-                        </Col>
-                        <Col sm="3" md="3">
-                            <Card>
-                                <div className="campaign ct-charts">
-                                    <div className=''>
-                                        <ReactPlayer
-                                        url='https://www.youtube.com/watch?v=21X5lGlDOfg'
-                                        width='100%'
-                                        height='200px'
-                                        controls="true"
-                                        />
-                                    </div>
-                                </div>
-                                <CardBody>
-                                    <CardTitle>HS Codes</CardTitle>
-                                </CardBody>
-                            </Card>
-                        </Col>
-
-                        <Col sm="3" md="3">
-                            <Card>
-                                <div className="campaign ct-charts">
-                                    <div className=''>
-                                        <ReactPlayer
-                                        url='https://www.youtube.com/watch?v=21X5lGlDOfg'
-                                        width='100%'
-                                        height='200px'
-                                        controls="true"
-                                        />
-                                    </div>
-                                </div>
-                                <CardBody>
-                                    <CardTitle>HS Codes</CardTitle>
-                                </CardBody>
-                            </Card>
-                        </Col>
-
-                        <Col sm="3" md="3">
-                            <Card>
-                                <div className="campaign ct-charts">
-                                    <div className=''>
-                                        <ReactPlayer
-                                        url='https://www.youtube.com/watch?v=21X5lGlDOfg'
-                                        width='100%'
-                                        height='200px'
-                                        controls="true"
-                                        />
-                                    </div>
-                                </div>
-                                <CardBody>
-                                    <CardTitle>HS Codes</CardTitle>
-                                </CardBody>
-                            </Card>
-                        </Col>
-
-                        <Col sm="3" md="3">
+                        <Col sm="4" md="4">
                             <Card>
                                 <div className="campaign ct-charts">
                                     <div className=''>

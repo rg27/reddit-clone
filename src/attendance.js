@@ -58,7 +58,7 @@ return (
           <h1>Raffle Registration Form</h1>
           <FormGroup >
             <Input 
-              required
+              required="true"
               type="text" 
               name="name" 
               className="attinputClass"
@@ -70,7 +70,7 @@ return (
           <FormGroup>
          
             <Input 
-              required
+              required="true"
               className="attinputClass"
               type="text" 
               name="email" 
@@ -82,7 +82,7 @@ return (
 
           <FormGroup>
             <Input 
-                required
+                required="true"
                 className="attinputClass"
                 type="text" 
                 name="phone" 
@@ -93,7 +93,7 @@ return (
           </FormGroup>
 
           <FormGroup>
-            <Input type='select' required  value={account}   onChange={handleChange}   name="account" id="exampleAccount">
+            <Input type='select' required="true"  value={account}   onChange={handleChange}   name="account" id="exampleAccount">
               <option  value=" ">--Choose Account--</option>
               <option value="ADMIN">ADMIN</option>
               <option value="B2B">B2B</option>
@@ -138,7 +138,7 @@ return (
 
           <FormGroup>
             <Input 
-              required
+              required="true"
               className="attinputClass"
               type="text" 
               name="town" 
@@ -151,7 +151,7 @@ return (
           <FormGroup>
          
             <Input 
-              required
+              required="true"
               className="attinputClass"
               type="text" 
               name="province" 

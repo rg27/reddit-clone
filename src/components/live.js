@@ -37,6 +37,29 @@ const Live = () => {
                     </Col>
                 </Row>
             </CardBody>
+
+            <CardBody>
+                <div className="d-flex align-items-center">
+                    <div>
+                        <CardTitle>B2B Tribute Video</CardTitle>
+                    </div>
+                </div>
+                <Row>
+                    <Col lg="12">
+                    <div className="campaign ct-charts">
+                        <div className='player-wrapper'>
+                            <ReactPlayer
+                            className='react-player'
+                            url='https://youtu.be/Z2CZcu5Mm3A'
+                            width='100%'
+                            height='300px'
+                            controls="true"
+                            />
+                        </div>
+                        </div>
+                    </Col>
+                </Row>
+            </CardBody>
         </Card>
 );
 }
