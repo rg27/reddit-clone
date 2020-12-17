@@ -26,14 +26,20 @@ import {
             src={Logo}
           />
           </NavbarBrand>
-            <NavbarToggler   onClick={toggle} />
+            {/* <NavbarToggler   onClick={toggle} /> */}
             <Collapse isOpen={isOpen} navbar>
               <Nav className="mr-auto" navbar>
                 <NavItem>
-                  </NavItem>
+                </NavItem>
+              </Nav>
+
+              <Nav className="" navbar>
+                <NavItem>
+                  <NavbarText className="timer"><Timer/></NavbarText>
+                </NavItem>
               </Nav>
             
-              <NavbarText className="timer"><Timer/></NavbarText>
+             
             </Collapse>
         </Navbar>
       </div>

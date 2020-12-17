@@ -7,6 +7,7 @@ import Feedback from "./feedback";
 import Attendance from "./attendance";
 import Dashboard from "./dashboard";
 import ScrollIntoViewIfNeeded from 'react-scroll-into-view-if-needed';
+import Particles from 'react-particles-js';
 import {
   Col,
   Row,
@@ -18,6 +19,28 @@ const App = () => {
   return (
     <>
     <div className="app-background">
+          <Particles
+           style={{ position: "absolute" }}
+           height="95%"
+           width="95%"
+            params={{
+              "particles": {
+                  "number": {
+                      "value": 500
+                  },
+                  "size": {
+                      "value": 3
+                  }
+              },
+              "interactivity": {
+                  "events": {
+                      "onhover": {
+                          "enable": true,
+                          "mode": "repulse"
+                      }
+                  }
+              }
+          }} />
       <Navbar />
       <Container>
           <Row>
@@ -37,6 +60,7 @@ const App = () => {
             </ScrollIntoViewIfNeeded>
         </Container>
         <Footer/>
+    
     </div>
     </>
   );

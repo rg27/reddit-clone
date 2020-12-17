@@ -72,7 +72,7 @@ return (
             <Input 
               required="true"
               className="attinputClass"
-              type="text" 
+              type="email" 
               name="email" 
               placeholder="Company Email"
               value={email}

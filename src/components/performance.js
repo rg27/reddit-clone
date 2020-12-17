@@ -19,7 +19,6 @@ const Performance = () => {
                     <div className="d-flex align-items-center">
                         <div>
                             <CardTitle>Tiktok Challenge</CardTitle>
-                            <CardSubtitle>Phasellus lobortis vestibulum sapien, ut blandit neque bibendum eu. Nunc tincidunt pharetra felis. </CardSubtitle>
                         </div>
                     </div>
                     <Row>
