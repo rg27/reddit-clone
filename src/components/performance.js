@@ -27,7 +27,7 @@ const Performance = () => {
                                 <div className="campaign ct-charts">
                                     <div className=''>
                                         <ReactPlayer
-                                        url='https://www.youtube.com/watch?v=21X5lGlDOfg'
+                                        url='https://www.youtube.com/watch?v=8wfGkUfey7Y&feature=youtu.be'
                                         width='100%'
                                         height='200px'
                                         controls="true"
@@ -35,7 +35,7 @@ const Performance = () => {
                                     </div>
                                 </div>
                                 <CardBody>
-                                    <CardTitle>De-Dupe</CardTitle>
+                                    <CardTitle>Tiktok Entry 9</CardTitle>
                                 </CardBody>
                             </Card>
                         </Col>
@@ -44,7 +44,7 @@ const Performance = () => {
                                 <div className="campaign ct-charts">
                                     <div className=''>
                                         <ReactPlayer
-                                        url='https://www.youtube.com/watch?v=21X5lGlDOfg'
+                                        url='https://www.youtube.com/watch?v=-1E1LFdlsQc&feature=youtu.be'
                                         width='100%'
                                         height='200px'
                                         controls="true"
@@ -53,7 +53,7 @@ const Performance = () => {
                                 </div>
 
                                 <CardBody>
-                                    <CardTitle>Data Science</CardTitle>
+                                    <CardTitle>Tiktok Entry 14</CardTitle>
                                 </CardBody>
                             </Card>
                         </Col>
@@ -62,7 +62,7 @@ const Performance = () => {
                                 <div className="campaign ct-charts">
                                     <div className=''>
                                         <ReactPlayer
-                                        url='https://www.youtube.com/watch?v=21X5lGlDOfg'
+                                        url='https://www.youtube.com/watch?v=rYuJexg_fqA&feature=youtu.be'
                                         width='100%'
                                         height='200px'
                                         controls="true"
@@ -70,7 +70,7 @@ const Performance = () => {
                                     </div>
                                 </div>
                                 <CardBody>
-                                    <CardTitle>HS Codes</CardTitle>
+                                    <CardTitle>Tiktok Entry 17</CardTitle>
                                 </CardBody>
                             </Card>
                         </Col>
