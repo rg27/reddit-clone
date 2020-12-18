@@ -56,7 +56,7 @@ File: scss
     margin-bottom: -30px;
     margin-bottom: 30px;
   }
-  
+
   .form > input,
   textarea {
     padding: 20px;
@@ -335,6 +335,7 @@ File: scss
     background: white;
     max-width: 400px;
     margin: 0 auto;
+    
   }
   
   ul, li {
@@ -444,6 +445,14 @@ File: scss
   .ctext
   {
       color: #dfdff1;
+    
+  }
+
+  .ctext1
+  {
+      color: #dfdff1;
+      font-size: 25px;
+      font-weight: bold;
     
   }
 
@@ -13941,4 +13950,7 @@ File: scss
 
 
  /* Form CSS */
+ 
+
+
  
