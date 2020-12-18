@@ -56,7 +56,7 @@ return (
     <CardBody>
     <div className="d-flex align-items-center">
       <Form className="attendanceform" onSubmit={handleSubmit}>
-          <h1>Raffle Registration Form</h1>
+          <h2>Raffle Registration Form</h2>
           <FormGroup >
             <Input 
               required="true"

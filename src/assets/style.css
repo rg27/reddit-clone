@@ -52,9 +52,9 @@ File: scss
     margin-bottom: 30px;
   }
 
-  .attendanceform > h1 {
-      margin-top: 30px;
-    margin-bottom: 20px;
+  .attendanceform > h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
   
   .form > input,
@@ -90,7 +90,7 @@ File: scss
   }
 
   .attendanceform .attlabel {
-    font-size: 20px;
+    font-size: 15px;
    
   }
   
