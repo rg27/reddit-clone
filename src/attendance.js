@@ -35,7 +35,7 @@ const handleSubmit = async (e) => {
   
   try{
     const response = await fetch(
-      "https://v1.nocodeapi.com/rey12/google_sheets/phNpAEVUJmlYKctq?tabId=Sheet1",
+      "https://v1.nocodeapi.com/rey12/google_sheets/phNpAEVUJmlYKctq?tabId=Raw",
       {
         method:'POST',
         headers:{
