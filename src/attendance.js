@@ -17,10 +17,11 @@ const Attendance = () => {
     account:"",
     phone:"",
     province:"",
-    town:""
+    town:"",
+    country:""
   });
 
-  const {name,email,phone,account,province,town} = data;
+  const {name,email,phone,account,province,town,country} = data;
 
   const handleChange = e => {
     setData({ ...data, [e.target.name]: e.target.value})
@@ -39,12 +40,12 @@ const handleSubmit = async (e) => {
           'Content-Type':'application/json'
         },
         body: JSON.stringify([
-          [name,email,account,phone,province,town, new Date().toLocaleString()],
+          [name,email,account,phone,province,town, new Date().toLocaleString(), country],
         ]),
     }
   );
     await response.json();
-    setData({ ...data, name: "", email: "",phone: "",account: "",province: "", town: ""});
+    setData({ ...data, name: "", email: "",phone: "",account: "",province: "", town: "",country:""});
   }catch(err){
     console.log(err)
   }
@@ -149,7 +150,6 @@ return (
           </FormGroup>
 
           <FormGroup>
-         
             <Input 
               required="true"
               className="attinputClass"
@@ -157,6 +157,18 @@ return (
               name="province" 
               placeholder="Province"
               value={province}
+              onChange={handleChange} 
+            />
+          </FormGroup>
+
+          <FormGroup>
+            <Input 
+              required="true"
+              className="attinputClass"
+              type="text" 
+              name="country" 
+              placeholder="Country"
+              value={country}
               onChange={handleChange} 
             />
           </FormGroup>

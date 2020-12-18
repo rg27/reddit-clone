@@ -1,5 +1,6 @@
 import React from "react";
 import ReactPlayer from 'react-player'
+import Embed from 'react-embed';
 import {
     Card,
     CardBody,
@@ -58,8 +59,11 @@ const Live = () => {
                         </div>
                         </div>
                     </Col>
+
+                    
                 </Row>
             </CardBody>
+            <Embed url='https://g.co/arts/scAeEQ1QVSx3bTPz8' />
         </Card>
 );
 }
