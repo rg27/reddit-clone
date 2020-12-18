@@ -18,10 +18,12 @@ const Attendance = () => {
     phone:"",
     province:"",
     town:"",
-    country:""
+    country:"",
+    employeeID:""
+
   });
 
-  const {name,email,phone,account,province,town,country} = data;
+  const {name,email,phone,account,province,town,country,employeeID} = data;
 
   const handleChange = e => {
     setData({ ...data, [e.target.name]: e.target.value})
@@ -40,12 +42,12 @@ const handleSubmit = async (e) => {
           'Content-Type':'application/json'
         },
         body: JSON.stringify([
-          [name,email,account,phone,province,town, new Date().toLocaleString(), country],
+          [name,email,account,phone,province,town, new Date().toLocaleString(), country, employeeID],
         ]),
     }
   );
     await response.json();
-    setData({ ...data, name: "", email: "",phone: "",account: "",province: "", town: "",country:""});
+    setData({ ...data, name: "", email: "",phone: "",account: "",province: "", town: "",country:"", employeeID:""});
   }catch(err){
     console.log(err)
   }
@@ -56,7 +58,7 @@ return (
     <CardBody>
     <div className="d-flex align-items-center">
       <Form className="attendanceform" onSubmit={handleSubmit}>
-          <h2>Raffle Registration Form</h2>
+          <h1>Raffle Registration Form</h1>
           <FormGroup >
             <Input 
               required="true"
@@ -79,6 +81,18 @@ return (
               value={email}
               onChange={handleChange} 
             />
+          </FormGroup>
+
+          <FormGroup>
+            <Input 
+                required="true"
+                className="attinputClass"
+                type="text" 
+                name="employeeID" 
+                placeholder="Employee ID"
+                value={employeeID}
+                onChange={handleChange} 
+              />
           </FormGroup>
 
           <FormGroup>
