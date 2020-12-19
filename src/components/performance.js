@@ -18,7 +18,7 @@ const Performance = () => {
                 <CardBody>
                     <div className="d-flex align-items-center">
                         <div>
-                            <CardTitle>Tiktok Challenge</CardTitle>
+                            <CardTitle>Top 3 Tiktok videos</CardTitle>
                         </div>
                     </div>
                     <Row>
