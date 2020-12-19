@@ -26,7 +26,7 @@ const Live = () => {
                         <div className='player-wrapper'>
                             <ReactPlayer
                             className='react-player'
-                            url='https://www.facebook.com/officepartners360/videos/429530911404618'
+                            url='https://www.facebook.com/reymar.gualvez.1/videos/230391001944231'
                             width='100%'
                             height='100%'
                             playing="true"
