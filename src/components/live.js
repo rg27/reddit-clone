@@ -26,7 +26,7 @@ const Live = () => {
                         <div className='player-wrapper'>
                             <ReactPlayer
                             className='react-player'
-                            url='https://www.facebook.com/102825338383824/videos/3613254848766397'
+                            url='https://www.facebook.com/officepartners360/videos/201826678231880'
                             width='100%'
                             height='100%'
                             playing="true"
@@ -59,11 +59,8 @@ const Live = () => {
                         </div>
                         </div>
                     </Col>
-
-                    
                 </Row>
             </CardBody>
-            <Embed url='https://g.co/arts/scAeEQ1QVSx3bTPz8' />
         </Card>
 );
 }
