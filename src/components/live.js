@@ -42,7 +42,7 @@ const Live = () => {
             <CardBody>
                 <div className="d-flex align-items-center">
                     <div>
-                        <CardTitle>B2B Tribute Video</CardTitle>
+                        <CardTitle>Tiktok Honorable Mentions</CardTitle>
                     </div>
                 </div>
                 <Row>
@@ -51,7 +51,7 @@ const Live = () => {
                         <div className='player-wrapper'>
                             <ReactPlayer
                             className='react-player'
-                            url='https://youtu.be/Z2CZcu5Mm3A'
+                            url='https://www.youtube.com/watch?v=0Cno7FpqKaY&feature=youtu.be'
                             width='100%'
                             height='300px'
                             controls="true"

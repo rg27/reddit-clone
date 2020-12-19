@@ -52,13 +52,26 @@ File: scss
     margin-bottom: 30px;
   }
 
-  .attendanceform > h2 {
-    margin-top: 5px;
-    margin-bottom: 10px;
+  .attendanceform > h1 {
+    margin-bottom: -30px;
+    margin-bottom: 30px;
   }
-  
+
   .form > input,
   textarea {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 20px;
+    border: 5px solid black;
+    background: #fff;
+    font-size: 26px;
+    outline: none;
+    caret-color: auto;
+  }
+
+  .attendanceform > input
+   {
     padding: 20px;
     border-radius: 5px;
     text-align: left;
@@ -122,7 +135,8 @@ File: scss
 
   
   .attendanceform{
-    height: 65vh;
+      padding: 10px;
+    height: 85vh;
     width: 250%;
     display: flex;
     flex-direction: column;
@@ -144,6 +158,8 @@ File: scss
     width: 100%;
     color: #000;
     caret-color:auto;
+    padding-bottom: 10px;
+    font-size: 15px;
 }
 
   .inputClass:focus {
@@ -319,6 +335,7 @@ File: scss
     background: white;
     max-width: 400px;
     margin: 0 auto;
+    
   }
   
   ul, li {
@@ -428,6 +445,14 @@ File: scss
   .ctext
   {
       color: #dfdff1;
+    
+  }
+
+  .ctext1
+  {
+      color: #dfdff1;
+      font-size: 25px;
+      font-weight: bold;
     
   }
 
@@ -13925,4 +13950,7 @@ File: scss
 
 
  /* Form CSS */
+ 
+
+
  

@@ -7,6 +7,7 @@ import 'firebase/analytics';
 import {
   Card,
   CardBody,
+  Button
 } from 'reactstrap';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -62,8 +63,8 @@ function SignIn() {
 
   return (
     <>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p className="ctext">Use your company email!</p>
+      <Button className="sign-in" color="primary" size="lg" onClick={signInWithGoogle}>Sign in with Google</Button>
+      <p className="ctext1">Use your company email!</p>
       <p className="ctext">Do not violate the community guidelines!</p>
     </>
   )
