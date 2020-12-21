@@ -26,12 +26,11 @@ const Live = () => {
                         <div className='player-wrapper'>
                             <ReactPlayer
                             className='react-player'
-                            url='https://www.facebook.com/reymar.gualvez.1/videos/230391001944231'
+                            url='https://www.youtube.com/watch?v=BcA_AqSEcFI&feature=youtu.be'
                             width='100%'
                             height='100%'
                             playing="true"
                             controls="true"
-                            appId="713990019210041"
                             />
                         </div>
                         </div>
