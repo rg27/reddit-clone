@@ -50,7 +50,7 @@ const Live = () => {
                         <div className='player-wrapper'>
                             <ReactPlayer
                             className='react-player'
-                            url='https://www.youtube.com/watch?v=DQnilGGjBMM&feature=youtu.be'
+                            url='https://www.youtube.com/watch?v=0Cno7FpqKaY&feature=youtu.be%5C'
                             width='100%'
                             height='300px'
                             controls="true"
