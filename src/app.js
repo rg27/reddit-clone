@@ -108,7 +108,7 @@ const App = () => {
             <ScrollIntoViewIfNeeded>
               <Row >
                   {/* <Col sm="6" className="py-2 "><span> <Attendance/></span></Col> */}
-                  <Col sm="12" className="py-2 "><span> <Feedback/></span></Col>
+                  {/* <Col sm="12" className="py-2 "><span> <Feedback/></span></Col> */}
               </Row>
             </ScrollIntoViewIfNeeded>
         </Container>
