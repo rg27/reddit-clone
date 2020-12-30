@@ -35,7 +35,7 @@ import {
 
               <Nav className="" navbar>
                 <NavItem>
-                  <NavbarText className="timer"><Timer/></NavbarText>
+                  {/* <NavbarText className="timer"><Timer/></NavbarText> */}
                 </NavItem>
               </Nav>
             

@@ -46,6 +46,11 @@ File: scss
     text-align: left;
     
   }
+
+  .survey_a:hover{
+      color: rgb(202, 192, 192);
+      
+  }
   
   .form > h1 {
     margin-bottom: -30px;

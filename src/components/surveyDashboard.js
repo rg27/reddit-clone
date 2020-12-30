@@ -4,6 +4,7 @@ import Iframe from 'react-iframe'
 import {
   Card,
   CardBody,
+  Button
 } from 'reactstrap';
 
 const SurveyDashboard = () => {
@@ -21,6 +22,10 @@ return (
             allowfullscreen="true"
         />
     </CardBody>
+    <Button color="primary" size="lg" block active>
+    <a className="survey_a" href="https://docs.google.com/forms/d/e/1FAIpQLSfMsgHFOiVvaaxgf-M2l-6O6VBCgX7aS6TQZb53sKGif250Aw/viewform" target="_blank">Click here to take the survey</a> 
+    </Button>
+   
   </Card>
   );
 };
