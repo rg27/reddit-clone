@@ -4,7 +4,7 @@ import Performance from "./components/performance";
 import VoteTally from "./vote-tally";
 import Footer from "./components/footer";
 import Feedback from "./feedback";
-// import Attendance from "./attendance";
+import YeeWinners from "./winners";
 import Dashboard from "./dashboard";
 import ScrollIntoViewIfNeeded from 'react-scroll-into-view-if-needed';
 import Particles from 'react-particles-js';
@@ -96,22 +96,15 @@ const App = () => {
 	}} />
       <Navbar />
       <Container>
-          <Row>
+	  <YeeWinners/>
+          {/* <Row>
               <Col sm="8" className="py-2 "><span><Performance/></span></Col>
               <Col sm="4" className="py-2 "><span><VoteTally /></span></Col>
-          </Row>
+          </Row> */}
         </Container>
         <Container>
             <Dashboard/>
         </Container>
-        {/* <Container>
-            <ScrollIntoViewIfNeeded>
-              <Row >
-                  <Col sm="6" className="py-2 "><span> <Attendance/></span></Col>
-                  <Col sm="12" className="py-2 "><span> <Feedback/></span></Col>
-              </Row>
-            </ScrollIntoViewIfNeeded>
-        </Container> */}
         <Footer/>
     
     </div>
